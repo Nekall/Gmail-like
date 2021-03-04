@@ -1,0 +1,5 @@
+<p>
+  <%= link_to '🗑️', email, method: :delete, data: { confirm: 'Es-tu sûre ? 🚮' }, remote: true %>
+  <hr>
+  <%= Email.find(email.id).body %>
+</p>

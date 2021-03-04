@@ -1,0 +1,5 @@
+delete<%= @email.id %> = document.querySelector("#delete" + <%= @email.id %>);
+delete<%= @email.id %>.remove();
+
+clean = document.querySelector("#contentEmail")
+clean.innerHTML = ("beforebegin", "<%= j render 'clean', email: @email %>")
