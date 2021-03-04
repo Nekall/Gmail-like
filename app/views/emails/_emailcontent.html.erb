@@ -1,5 +1,6 @@
 <p>
-  <%= link_to '🗑️', email, method: :delete, data: { confirm: 'Es-tu sûre ? 🚮' }, remote: true %>
+  <%= link_to ' 🗑️ ', email, method: :delete, data: { confirm: 'Es-tu sûre ? 🚮' }, remote: true %>
+  <button class="btn btn-outline-dark btn-sm" type="button" name="button"><small>Marquer comme non-lu</small></button>
   <hr>
   <%= Email.find(email.id).body %>
 </p>
