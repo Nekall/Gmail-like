@@ -1,6 +1,6 @@
 <nav class="navbar navbar-light bg-light">
   <span class="navbar-brand mb-0 h1"><span class="m-1"><i class="far fa-paper-plane fa-lg"></i> 𝙈𝙚𝙨𝙨@𝙜𝙚</span>  <sup><small style="font-size: x-small;">VOTRE MESSAGERIE SECURISE</small></sup></span>
-  <button class="btn btn-outline-dark m-1" type="button" name="button"><%= link_to 'Créer un mail', new_email_path, remote: true %></button>
+  <%= link_to 'Créer un mail ✍ ', new_email_path, :class => "btn btn-dark m-1", remote: true %>
 </nav>
 <hr class="m-0">
 <div class="container m-0">
@@ -10,7 +10,7 @@
         <tbody id="newMail">
           <% @emails.each do |email| %>
           <tr>
-            <td id="delete<%= email.id %>"><%= link_to email.object, email, remote: true %></td>
+            <td type="button" id="delete<%= email.id %>"><%= link_to email.object, email, remote: true %></td>
           </tr>
           <% end %>
         </tbody>
@@ -25,7 +25,3 @@
     </div>
   </div>
 </div>
-<!--
-<td><#%= link_to 'Show', email %></td>
-<td><#%= link_to 'Edit', edit_email_path(email) %></td>
--->
