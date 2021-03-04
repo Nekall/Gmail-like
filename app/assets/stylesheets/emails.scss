@@ -16,3 +16,15 @@ td link_to {
     display:block;
     width:100%;
 }
+
+.animated {
+  animation: 3s infinite slidein;
+  position: relative;
+}
+
+@keyframes slidein {
+  0% {opacity:1;}
+  1% {right:100px;}
+  99% {right:-100px;}
+  100% {opacity:0;}
+}
